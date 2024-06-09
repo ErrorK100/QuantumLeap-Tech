@@ -1,0 +1,269 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0c2d54;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.logo img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.header-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.btn-about {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #08477a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-about:hover {
+    background-color: #0f80ba;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0f80ba;
+}
+
+/* Banner */
+#banner {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    background: url('img/banner.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #08477a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0f80ba;
+}
+
+/* Serviços */
+#services {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.service {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service img {
+    width: 100px;
+    margin: 0 auto 20px;
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Sobre Nós */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Contato */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #08477a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0f80ba;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #08477a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    animation: slideInUp 1s ease-in-out;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
